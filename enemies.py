@@ -14,9 +14,9 @@ def MiniBoss(Enemy):
 	def __init__(self):
 		super().__init__(name="Mini Boss ", hp=75, damage=10)
 		
-def Final Boss(Enemy):
+def FinalBoss(Enemy):
 	def __init__(self):
-		super().__init__(name="Final Boss ", hp=5, damage=15)
+		super().__init__(name="Final Boss ", hp=180, damage=15)
 		
 								
 

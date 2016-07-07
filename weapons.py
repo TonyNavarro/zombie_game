@@ -15,8 +15,8 @@ class Weapon(Item):
 
 class FiveSeven(Weapon):
 	def __init__(self):
-		super().__init__(name="FiveSeven", description= "A secondary weapon with a normal fire rate", value=0, damage=3)
-
+		super(). __init__(name="FiveSeven", description= "A secondary weapon with a normal fire rate", value=0, damage=3)
+ 
 class AK47(Weapon):
 	def __init__(self):
 		super().__init__(name="AK47", description="A powerful assault rifle with a slighly different fire rate", value=0, damage=6)
