@@ -1,18 +1,12 @@
-import enemies
-import weapons 
+import ZombieGame
 class Player():
-	def __init__(self):
-		self.inventory=[Weapon.FiveSeven()]
+	def __init__(self, hp):
 		self.hp=100
-		#self.location=
-		self.victory= false
-	def is_alive(self):
-		return self.hp >0
-	def print_inventory (self):
-		for item in self.inventory:
-			print (item, '\n')
+		self.name= NameOfCharacter
+
+
+		
 
 
 
 	
-

@@ -1,5 +1,7 @@
 import weapons 
 import enemies
+import actions
+import world 
 
 class MapTile:
 	def __init__(self, x, y):
@@ -14,15 +16,17 @@ class  StartinRoom(MapTile):
 	def intro_text(self):
 		return 
 	def modify_player(self, player):
-	pass
+	
 class LootRoom(MapTile):
 	def __init__(self, x, y, item):
-		self.itme=item
+		self.item=item
 		super().__init__(x,y)
 	def add_loot(self, player):
 		player.inventory.append(self.item)
 	def modify_player(self, player):
 		self. add_loot(player)
+
+
 class EnemyRoom(MapTile):
 	def __init__(self, x, yx enemy):
 		if self.enemy.is_alive():
@@ -46,6 +50,8 @@ class FinalBossRoom(EnemyRoom):
 			return"""The Final Boss Appeared"""
 		else:
 			return"""Dead body of the Final Boss"""
+
+
 
 				
 								
